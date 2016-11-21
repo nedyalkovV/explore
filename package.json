@@ -1,0 +1,15 @@
+{
+  "name": "explore",
+  "version": "1.0.0",
+  "description": "web design test project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vasil nedyalkov",
+  "license": "MIT",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1"
+  }
+}
