@@ -1,0 +1,438 @@
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1600px; }
+
+@media screen and (max-width: 880px) {
+  .wrapper {
+    width: 100%;
+    margin: 0 auto; } }
+body {
+  font-family: Arial;
+  padding: 0;
+  margin: 0; }
+  body nav {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%; }
+    body nav ul {
+      padding: 0;
+      margin: 0; }
+      body nav ul li {
+        display: inline-block;
+        margin: 0px 70px;
+        vertical-align: middle; }
+        body nav ul li a {
+          font-size: 13px;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #2b2d42;
+          cursor: pointer; }
+          body nav ul li a:hover {
+            opacity: 0.8; }
+    @media screen and (max-width: 1220px) {
+      body nav ul li {
+        margin: 0px 30px; } }
+    @media screen and (max-width: 880px) {
+      body nav {
+        padding: 0; }
+        body nav ul li {
+          margin: 0;
+          display: block;
+          background-color: #2b2d42; }
+          body nav ul li a {
+            padding: 20px 0;
+            display: block;
+            color: white; }
+          body nav ul li:hover {
+            background-color: #da042a; }
+        body nav ul .nav-item {
+          display: none; } }
+  body main .newAdventure {
+    position: relative;
+    height: 1020px;
+    background: url("../public/backgrounds/newAdventureBackground.png");
+    background-size: cover;
+    background-position: center; }
+    body main .newAdventure .content {
+      padding-top: 200px;
+      display: flex;
+      justify-content: flex-end;
+      text-align: right; }
+      body main .newAdventure .content .aligment {
+        width: 400px; }
+        body main .newAdventure .content .aligment h1 {
+          margin: 0;
+          font-weight: lighter;
+          font-size: 50px;
+          color: #2b2d42;
+          margin-bottom: 70px; }
+        body main .newAdventure .content .aligment div {
+          font-size: 16px;
+          color: #2b2d42;
+          line-height: 25px; }
+        body main .newAdventure .content .aligment ul {
+          padding: 0; }
+          body main .newAdventure .content .aligment ul li {
+            display: inline-block;
+            margin-left: 10px; }
+    body main .newAdventure .middle-section-left {
+      bottom: 0;
+      position: absolute;
+      width: 465px;
+      background-color: #da042a; }
+      body main .newAdventure .middle-section-left h1 {
+        padding: 45px;
+        position: relative;
+        z-index: 100;
+        margin: 0px;
+        font-size: 30px;
+        font-weight: lighter;
+        color: white;
+        letter-spacing: 5px;
+        text-transform: uppercase; }
+      body main .newAdventure .middle-section-left::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -35px;
+        width: 100%;
+        height: 70px;
+        background: #da042a;
+        -webkit-transform: skewY(-5deg);
+        -moz-transform: skewY(-5deg);
+        -ms-transform: skewY(-5deg);
+        -o-transform: skewY(-5deg);
+        transform: skewY(-5deg);
+        -webkit-backface-visibility: hidden;
+        z-index: 0; }
+    @media screen and (max-width: 880px) {
+      body main .newAdventure .middle-section-left {
+        width: 100%; }
+      body main .newAdventure .content {
+        display: flex;
+        justify-content: center; } }
+  body main .courage .align {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    body main .courage .align .left {
+      width: 465px; }
+      body main .courage .align .left .middle-section-left {
+        padding: 50px 50px 230px 50px;
+        background-color: #da042a;
+        color: white;
+        line-height: 20px; }
+      body main .courage .align .left .slider {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        min-height: 500px;
+        padding: 0px 20px; }
+        body main .courage .align .left .slider ul {
+          padding: 0; }
+          body main .courage .align .left .slider ul li {
+            display: inline-block;
+            vertical-align: middle; }
+            body main .courage .align .left .slider ul li a {
+              font-size: 40px;
+              color: #2b2d42; }
+              body main .courage .align .left .slider ul li a:hover {
+                opacity: 0.8; }
+    body main .courage .align .right {
+      width: calc(100% - 465px);
+      padding: 100px 0; }
+      body main .courage .align .right img {
+        width: 100%; }
+      body main .courage .align .right h1 {
+        text-align: right;
+        padding: 100px 40px 100px 0px;
+        margin: 0;
+        font-weight: lighter;
+        font-size: 35px;
+        color: #2b2d42;
+        text-transform: uppercase; }
+      body main .courage .align .right .text {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; }
+        body main .courage .align .right .text section {
+          width: 48%; }
+      @media screen and (max-width: 1220px) {
+        body main .courage .align .right .text {
+          padding: 10px;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap; }
+          body main .courage .align .right .text section {
+            width: 100%; } }
+  @media screen and (max-width: 880px) {
+    body main .courage .align .left {
+      width: 100%; }
+    body main .courage .align .right {
+      width: 100%;
+      padding-top: 0; } }
+  body main .expect {
+    position: relative;
+    min-height: 1100px;
+    background: url("../public/backgrounds/expectBackground.png") no-repeat;
+    background-size: 100%;
+    background-position: top center;
+    padding-bottom: 50px; }
+    body main .expect .content {
+      bottom: 0;
+      position: absolute;
+      width: 100%;
+      background-color: #da042a;
+      z-index: 100;
+      padding: 50px 0; }
+      body main .expect .content h1 {
+        padding-bottom: 50px;
+        position: relative;
+        margin: 0px;
+        font-size: 30px;
+        font-weight: lighter;
+        color: white;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: right; }
+      body main .expect .content .align {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: white;
+        line-height: 25px; }
+        body main .expect .content .align section {
+          width: 45%; }
+      body main .expect .content::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -80px;
+        width: 100%;
+        height: 300px;
+        background: #da042a;
+        -webkit-transform: skewY(-2.5deg);
+        -moz-transform: skewY(-2.5deg);
+        -ms-transform: skewY(-2.5deg);
+        -o-transform: skewY(-2.5deg);
+        transform: skewY(-2.5deg);
+        -webkit-backface-visibility: hidden;
+        z-index: -1; }
+    @media screen and (max-width: 880px) {
+      body main .expect .content {
+        display: flex;
+        justify-content: center; }
+        body main .expect .content h1 {
+          text-align: center; }
+        body main .expect .content .align section {
+          padding: 20px;
+          width: 100%; } }
+  body main .toTheEdge {
+    padding: 75px 0;
+    text-align: center; }
+    body main .toTheEdge h1 {
+      margin: 0;
+      font-weight: lighter;
+      font-size: 30px;
+      color: #2b2d42;
+      margin-bottom: 75px;
+      text-transform: uppercase;
+      text-align: center; }
+    body main .toTheEdge .content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      body main .toTheEdge .content section {
+        color: #353535;
+        width: 30%;
+        margin-bottom: 100px;
+        text-align: center;
+        line-height: 30px; }
+        body main .toTheEdge .content section img {
+          width: 100%; }
+        body main .toTheEdge .content section h2 {
+          margin: 50px 0 20px 0;
+          font-size: 18px;
+          font-weight: lighter;
+          text-transform: uppercase; }
+        body main .toTheEdge .content section hr {
+          width: 35px;
+          display: block;
+          height: 1px;
+          border: 0;
+          border-top: 5px solid #da042a;
+          margin: 1em auto;
+          padding: 0; }
+    body main .toTheEdge button {
+      background-color: #2b2d42;
+      color: white;
+      padding: 20px 35px;
+      text-transform: uppercase;
+      outline: none;
+      border: 0;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold; }
+      body main .toTheEdge button .helper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center; }
+        body main .toTheEdge button .helper img {
+          margin-left: 10px; }
+    @media screen and (max-width: 880px) {
+      body main .toTheEdge .content {
+        padding: 20px; }
+        body main .toTheEdge .content section {
+          width: 100%; } }
+  body main .contact .background {
+    margin-left: 7%;
+    height: 600px;
+    width: 93%;
+    background: url("../public/backgrounds/contactBackground.png");
+    background-size: cover; }
+  body main .contact .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    body main .contact .content section {
+      width: 40%;
+      position: relative; }
+      body main .contact .content section .contact-us-form {
+        margin-top: -350px;
+        position: absolute;
+        width: 100%;
+        background-color: #da042a;
+        z-index: 100; }
+        body main .contact .content section .contact-us-form .align {
+          padding: 0px 30px; }
+        body main .contact .content section .contact-us-form h1 {
+          padding: 45px;
+          position: relative;
+          z-index: 100;
+          margin: 0px;
+          font-size: 30px;
+          font-weight: lighter;
+          color: white;
+          letter-spacing: 5px;
+          text-transform: uppercase; }
+        body main .contact .content section .contact-us-form::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: -35px;
+          width: 100%;
+          height: 70px;
+          background: #da042a;
+          -webkit-transform: skewY(-5deg);
+          -moz-transform: skewY(-5deg);
+          -ms-transform: skewY(-5deg);
+          -o-transform: skewY(-5deg);
+          transform: skewY(-5deg);
+          -webkit-backface-visibility: hidden;
+          z-index: 0; }
+        body main .contact .content section .contact-us-form input {
+          width: calc(100% - 20px);
+          border: 0;
+          margin: 30px auto;
+          padding: 20px 0 20px 20px;
+          box-shadow: 0px 7px 0px #2b2d42;
+          box-shadow: 0px 7px 0px #2b2d42; }
+        body main .contact .content section .contact-us-form button {
+          background-color: #2b2d42;
+          color: white;
+          padding: 20px 35px;
+          text-transform: uppercase;
+          outline: none;
+          border: 0;
+          cursor: pointer;
+          font-size: 18px;
+          font-weight: bold;
+          margin: 30px 0 500px 0; }
+          body main .contact .content section .contact-us-form button .helper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center; }
+            body main .contact .content section .contact-us-form button .helper img {
+              margin-left: 10px; }
+    body main .contact .content .hard-work {
+      padding: 50px;
+      line-height: 25px; }
+      body main .contact .content .hard-work h1 {
+        margin: 0;
+        font-weight: lighter;
+        font-size: 30px;
+        color: #2b2d42;
+        margin-bottom: 75px;
+        text-transform: uppercase; }
+    @media screen and (max-width: 880px) {
+      body main .contact .content section {
+        width: 100%; }
+        body main .contact .content section .contact-us-form {
+          position: relative;
+          margin-top: 100px;
+          width: 100%; } }
+  @media screen and (max-width: 880px) {
+    body main .contact .background {
+      height: 300px;
+      width: 100%;
+      margin-left: 0; } }
+  body footer {
+    margin-top: 500px;
+    position: relative; }
+    body footer .content {
+      text-align: center;
+      height: 200px;
+      bottom: 0;
+      position: absolute;
+      width: 100%;
+      background-color: #2b2d42;
+      z-index: 100;
+      padding: 50px 0; }
+      body footer .content div {
+        padding: 20px 0; }
+      body footer .content::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -80px;
+        width: 100%;
+        height: 240px;
+        background: #2b2d42;
+        -webkit-transform: skewY(-2deg);
+        -moz-transform: skewY(-2deg);
+        -ms-transform: skewY(-2deg);
+        -o-transform: skewY(-2deg);
+        transform: skewY(-2deg);
+        -webkit-backface-visibility: hidden;
+        z-index: -1; }
+    @media screen and (max-width: 880px) {
+      body footer {
+        margin-top: 0; } }
+
+.nav-blue {
+  animation: navigation 1s;
+  -webkit-animation: navigation 1s;
+  -ms-animation: navigation 1s;
+  animation-fill-mode: forwards; }
+  .nav-blue ul li a {
+    color: white; }
+
+@keyframes navigation {
+  0% {
+    background-color: none; }
+  100% {
+    background-color: #2b2d42; } }
+
+/*# sourceMappingURL=styles.css.map */
